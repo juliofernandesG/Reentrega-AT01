@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+
+.MenuLateral {
+  grid-area: 1 / 1 / 8 / 2;
+  background-color: rgb(196, 246, 255);
+}
+
+.MenuBar {
+  grid-area: 1 / 2 / 2 / 6;
+  height: 15vh;
+}
+
+.MenuImage {
+  grid-area: 2 / 2 / 3 / 6;
+}
+
+.MenuCard {
+  grid-area: 3 / 2 / 4 / 6;
+}
+
+.ProgrammingLanguages {
+  grid-area: 4 / 2 / 7 / 4;
+}
+
+.EngineeringAreas {
+  grid-area: 4 / 4 / 7 / 6;
+}
+
+.Footer {
+  grid-area: 7 / 2 / 8 / 6;
+  margin-top: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .parent {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 15vh auto auto auto auto auto;
+  }
+
+  .MenuBar {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .MenuImage {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .MenuCard {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .ProgrammingLanguages {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .EngineeringAreas {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+  .Footer {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .parent {
+    grid-template-rows: auto 10vh auto auto auto auto auto;
+  }
+
+  .MenuBar {
+    height: 10vh;
+  }
+}

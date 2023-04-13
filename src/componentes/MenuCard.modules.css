@@ -1,0 +1,24 @@
+.menuCard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex-basis: calc(25% - 1rem);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,32 @@
+.programming-languages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programming-languages-list-container {
+    max-height: 400px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.programming-languages-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.programming-languages-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.language-name {
+    font-weight: bold;
+}
+
+.language-percentage {
+    font-size: 14px;
+    color: gray;
+}
